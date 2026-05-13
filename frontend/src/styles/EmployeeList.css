@@ -1,0 +1,273 @@
+/* Employee List Styles */
+
+.employee-list-container {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.employee-list-container .container {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* List Header */
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.list-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.list-header .btn {
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.list-header .btn-success {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+}
+
+.list-header .btn-success:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+/* Search Box */
+.search-box {
+  margin-bottom: 2rem;
+}
+
+.search-box .form-control {
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #e0e0e0;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-box .form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 15px rgba(102, 126, 234, 0.2);
+  outline: none;
+}
+
+/* Employees Count */
+.employees-count {
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/* No Data */
+.no-data {
+  text-align: center;
+  padding: 3rem;
+  color: #999;
+}
+
+.no-data i {
+  font-size: 3rem;
+  color: #ddd;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.no-data p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Table */
+.table-responsive {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.employees-table {
+  margin-bottom: 0;
+}
+
+.employees-table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.employees-table thead th {
+  border: none;
+  padding: 1.2rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.employees-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+.employees-table tbody tr:hover {
+  background-color: #f9f9f9;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.employees-table tbody td {
+  padding: 1.2rem;
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+.employees-table .badge {
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.action-buttons .btn {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.85rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.action-buttons .btn-info {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.action-buttons .btn-info:hover {
+  background-color: #138496;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(23, 162, 184, 0.3);
+}
+
+.action-buttons .btn-warning {
+  background-color: #ffc107;
+  color: black;
+}
+
+.action-buttons .btn-warning:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(255, 193, 7, 0.3);
+}
+
+.action-buttons .btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.action-buttons .btn-danger:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(220, 53, 69, 0.3);
+}
+
+/* Alerts */
+.alert {
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 1.5rem;
+  animation: slideInDown 0.3s ease;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .list-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .list-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .list-header .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .employees-table thead {
+    display: none;
+  }
+
+  .employees-table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .employees-table tbody td {
+    display: block;
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    border: none;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+
+  .employees-table tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 1rem;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .action-buttons {
+    justify-content: flex-end;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
