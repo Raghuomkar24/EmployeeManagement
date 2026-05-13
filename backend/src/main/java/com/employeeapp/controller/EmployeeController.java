@@ -29,7 +29,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/employees")
 @RequiredArgsConstructor
-@CrossOrigin(origins = {"http://localhost:3000", "http://localhost:5173", "http://127.0.0.1:3000"})
+@CrossOrigin(origins = {"http://3.6.36.11:3000", "http://3.6.36.11:5173", "http://127.0.0.1:3000"})
 @Slf4j
 public class EmployeeController {
 
